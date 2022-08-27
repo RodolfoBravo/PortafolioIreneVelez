@@ -585,7 +585,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: normal;
-  color: white;
+  color: #591D90;
 }
 
 .timeline-body > p,
@@ -725,7 +725,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0);
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -749,8 +749,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .work .desc {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.6);
+    opacity: 0;
   }
   .work .desc h3 {
     -webkit-transform: translate3d(0, 0, 0);
@@ -763,6 +762,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work:hover .desc {
   opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
 }
 .work:hover .desc h3 {
   -webkit-transform: translate3d(0, 0, 0);

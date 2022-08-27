@@ -616,7 +616,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	margin-bottom: 20px;
 	font-size: 16px;
 	font-weight: normal;
-	color: lighten($brand-black, 75%);
+	color: $brand-black;
 }
 
 .timeline-body > p,
@@ -760,7 +760,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		display: table-cell;
 		vertical-align: middle;
 		height: 270px;
-		background: $brand-white;
+		background: #FFFFFF00;
 		opacity: 0;
 		@include transition(.3s);
 		h3{
@@ -780,8 +780,8 @@ h1, h2, h3, h4, h5, h6, figure {
 			transform: translate3d(0, 15px, 0);
 		}
 		@media screen and(max-width: $screen-sm){
-			opacity: 1;
-			background: rgba($brand-white,.6);
+			opacity: 0;
+			
 			h3{
 				-webkit-transform: translate3d(0, 0, 0);
 				transform: translate3d(0, 0, 0);
@@ -795,6 +795,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	&:hover{
 		.desc{
 			opacity: 1;
+			background: rgba($brand-white,.5);
 			h3{
 				-webkit-transform: translate3d(0, 0, 0);
 				transform: translate3d(0, 0, 0);
